@@ -1,0 +1,11 @@
+Functions implemented:
+ norm(vec)
+ cosine_similarity(returned 0.70)
+    
+ build_semantic_descriptors_from_files
+ most_similar_word
+ run_similarity_test
+
+
+All functions were tested and worked properly. 
+ 

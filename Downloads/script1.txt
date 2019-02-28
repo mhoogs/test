@@ -1,0 +1,176 @@
+Script started on 2018-09-28 15:58:00-06:00
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ exitgdb assign1b.outexit[Kgdb assign1b.out[K[K[K[K[Ka.out
+GNU gdb (GDB) Fedora 8.1.1-3.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a.out...(no debugging symbols found)...done.
+(gdb) b loop
+Breakpoint 1 at 0x4005dc
+(gdb) r
+Starting program: /home/ugc/mila.hoogstraat/assign1a.out 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-32.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x00000000004005dc in loop ()
+(gdb) display [K/i #[K$pc
+1: x/i $pc
+=> 0x4005dc <loop>:	cmp	x20, #0x5
+(gdb) ni
+0x00000000004005e0 in loop ()
+1: x/i $pc
+=> 0x4005e0 <loop+4>:	b.gt	0x400650 <end>
+(gdb) ni
+0x00000000004005e4 in loop ()
+1: x/i $pc
+=> 0x4005e4 <loop+8>:	mov	x19, #0x0                   	// #0
+(gdb) ni
+0x00000000004005e8 in loop ()
+1: x/i $pc
+=> 0x4005e8 <loop+12>:	mov	x21, #0xfffffffffffffffb    	// #-5
+(gdb) ni
+0x00000000004005ec in loop ()
+1: x/i $pc
+=> 0x4005ec <loop+16>:	mov	x22, #0xffffffffffffffe1    	// #-31
+(gdb) ni
+0x00000000004005f0 in loop ()
+1: x/i $pc
+=> 0x4005f0 <loop+20>:	mov	x23, #0x4                   	// #4
+(gdb) ni
+0x00000000004005f4 in loop ()
+1: x/i $pc
+=> 0x4005f4 <loop+24>:	mov	x25, #0x1f                  	// #31
+(gdb) ni
+0x00000000004005f8 in loop ()
+1: x/i $pc
+=> 0x4005f8 <loop+28>:	mul	x21, x21, x20
+(gdb) ni
+0x00000000004005fc in loop ()
+1: x/i $pc
+=> 0x4005fc <loop+32>:	mul	x21, x21, x20
+(gdb) ni
+0x0000000000400600 in loop ()
+1: x/i $pc
+=> 0x400600 <loop+36>:	mul	x21, x21, x20
+(gdb) ni
+0x0000000000400604 in loop ()
+1: x/i $pc
+=> 0x400604 <loop+40>:	add	x19, x19, x21
+(gdb) ni
+0x0000000000400608 in loop ()
+1: x/i $pc
+=> 0x400608 <loop+44>:	mul	x22, x22, x20
+(gdb) ni
+0x000000000040060c in loop ()
+1: x/i $pc
+=> 0x40060c <loop+48>:	mul	x22, x22, x20
+(gdb) ni
+0x0000000000400610 in loop ()
+1: x/i $pc
+=> 0x400610 <loop+52>:	add	x19, x19, x22
+(gdb) ni
+0x0000000000400614 in loop ()
+1: x/i $pc
+=> 0x400614 <loop+56>:	mul	x23, x23, x20
+(gdb) ni
+0x0000000000400618 in loop ()
+1: x/i $pc
+=> 0x400618 <loop+60>:	add	x19, x19, x23
+(gdb) ni
+0x000000000040061c in loop ()
+1: x/i $pc
+=> 0x40061c <loop+64>:	add	x19, x19, x25
+(gdb) ni
+0x0000000000400620 in loop ()
+1: x/i $pc
+=> 0x400620 <loop+68>:	cmp	x19, x24
+(gdb) ni
+0x0000000000400624 in loop ()
+1: x/i $pc
+=> 0x400624 <loop+72>:	b.gt	0x400648 <setNewMax>
+(gdb) ni
+0x0000000000400648 in setNewMax ()
+1: x/i $pc
+=> 0x400648 <setNewMax>:	mov	x24, x19
+(gdb) ni
+0x000000000040064c in setNewMax ()
+1: x/i $pc
+=> 0x40064c <setNewMax+4>:	b	0x400628 <print>
+(gdb) ni
+0x0000000000400628 in print ()
+1: x/i $pc
+=> 0x400628 <print>:	adrp	x0, 0x400000
+(gdb) ni
+0x000000000040062c in print ()
+1: x/i $pc
+=> 0x40062c <print+4>:	add	x0, x0, #0x594
+(gdb) ni
+0x0000000000400630 in print ()
+1: x/i $pc
+=> 0x400630 <print+8>:	mov	x1, x20
+(gdb) ni
+0x0000000000400634 in print ()
+1: x/i $pc
+=> 0x400634 <print+12>:	mov	x2, x19
+(gdb) ni
+0x0000000000400638 in print ()
+1: x/i $pc
+=> 0x400638 <print+16>:	mov	x3, x24
+(gdb) ni
+0x000000000040063c in print ()
+1: x/i $pc
+=> 0x40063c <print+20>:	bl	0x400480 <printf@plt>
+(gdb) ni
+When x = -6, y = -29, and the current maximum is: -29
+0x0000000000400640 in print ()
+1: x/i $pc
+=> 0x400640 <print+24>:	add	x20, x20, #0x1
+(gdb) ni
+0x0000000000400644 in print ()
+1: x/i $pc
+=> 0x400644 <print+28>:	b	0x4005dc <loop>
+(gdb) ni
+
+Breakpoint 1, 0x00000000004005dc in loop ()
+1: x/i $pc
+=> 0x4005dc <loop>:	cmp	x20, #0x5
+(gdb) p/d x[K%x20
+A syntax error in expression, near `%x20'.
+(gdb) p/d %x20[K[K[K[K[K[K[K[Kp/d 4[K$x20
+$1 = -5
+(gdb) p/d $x20[K1
+$2 = 1080
+(gdb) p/d $x21[K[K19
+$3 = -29
+(gdb) c
+Continuing.
+When x = -5, y = -139, and the current maximum is: -29
+
+Breakpoint 1, 0x00000000004005dc in loop ()
+1: x/i $pc
+=> 0x4005dc <loop>:	cmp	x20, #0x5
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 21765] will be killed.
+
+Quit anyway? (y or n) y
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ exit
+exit
+
+Script done on 2018-09-28 15:59:09-06:00

@@ -1,0 +1,13 @@
+Script started on 2018-11-30 13:03:03-07:00
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ exit./a5a[1Pexit./a5a[1Pexitot./a5a[1Pexit./a5a[1P/a5aexit./a5a[1P/a5a./a5ascript script.txt[3P./a5b.out 3 202gcc a5b.s -o a5b.out[2Pm4 a5b.asm > a5b.sgcc a5b.s -o a5b.out[6P./a5b.out 3 22
+March 22nd is Spring
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ ./a5b.out 3 22[C[C[C[K[K[K[K4 3[K30[K2[K6
+This date does not exist.
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ ./a5b.out 4 36[K[K[K[K10 [K[K[K2 29[K3[K[K30
+This date does not exist.
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ ./a5b.out 2 30[K[K[K[K10 21[K[K[K[K[K12 16
+December 16th is Fall
+]0;mila.hoogstraat@csa3:~mila.hoogstraat@csa3:~$ wio[K[K[Kexit
+exit
+
+Script done on 2018-11-30 13:03:54-07:00
